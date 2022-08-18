@@ -89,15 +89,32 @@ h3 {
 .cards {
     flex-direction: space-between;
     display: flex;
-    border: 5px white solid;
+    border: 5px lightgrey solid;
+    box-shadow: darkgrey solid;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
+    padding: 5px;
 }
 
 .container ul {
     overflow: hidden;
-    display: inline;
+    display: flex;
+    padding: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+}
+
+mark {
+    background-color: lightgrey;
+}
+
+.container a {
+    color: white;
+}
+
+a {
+    color:yellow;
 }
