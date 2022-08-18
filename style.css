@@ -5,15 +5,15 @@
 }
 /* make the margin for the page and color background fun */
 body {
-    background-image: url(/SBPortfolio/images/cool-background.png);
+    background-image: url(/SBPortfolio/images/cool-background.png); 
     font-family: Arial, Helvetica, sans-serif;
     margin: 2rem;
     color: white;
 }
 
+/*make the header where my name is at on the page and move it to the left*/
 header {
-    background-image: url(/SBPortfolio/images/palmtrees.jpg);
-    background-attachment:fixed;
+    background-position: unset;
     padding: 20px;
     text-align: center; 
     display: flex;
@@ -24,11 +24,11 @@ header {
 nav {
     overflow: hidden;
   }
-  
+/*make the links able to sit on the right side of the page */
 nav a {
     float: right;
     display: flex;
-    color: black;
+    color: red;
     text-align: right;
     padding: 14px 16px;
     text-decoration: none;
@@ -108,7 +108,7 @@ h3 {
 }
 
 mark {
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .container a {
@@ -116,5 +116,27 @@ mark {
 }
 
 a {
-    color:yellow;
+    color:red;
 }
+/*adjusting the screen sizes for multiple uses */
+@media screen and (max-width: 992px) {
+    work {
+        justify-content: space-between;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    nav {
+        width: auto;
+        height: auto;
+    }
+  }
+  
+  
+  @media screen and (max-width: 576px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+  }
