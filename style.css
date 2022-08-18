@@ -51,6 +51,14 @@ h3 {
     padding: 80px;
 }
 
+.work {
+    display: flex;
+}
+
+.allCards {
+    width: 80%;
+}
+
 .mySection p {
     width: 80%;
     border: 2px;
@@ -75,9 +83,32 @@ h3 {
 
 .container {
     display: flex;
+    justify-content: space-between;
 }
 
 .container ul {
     overflow: hidden;
     display: inline;
 }
+
+.btn {
+        padding: 15px 25px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #040faa;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+
+}
+      
+      .btn:hover {background-color: #040faa}
+      
+      .button:active {
+        background-color:  #040faa;
+        box-shadow: 0 5px rgb(118, 108, 204);
+        transform: translateY(4px);
+      }
