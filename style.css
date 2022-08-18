@@ -1,39 +1,83 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+/* make the margin for the page and color background fun */
 body {
-    margin: 0%;
     background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: gray;
+    background-color: rgba(17, 182, 233, 0.637);
     padding: 20px;
-    text-align: center;
-    
+    text-align: center; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 nav {
     overflow: hidden;
-    background-color: #333;
-}
-
-/* Style the topnav links */
-li {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
   }
   
-/* Change color on hover */
-li a:hover {
-    background-color: white;
+nav a {
+    float: right;
+    display: flex;
     color: black;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+nav a:hover {
+    border-bottom: 3px solid black;
+  }
+  
+nav a.active {
+    border-bottom: 3px solid black;
+  }
+
+h2 {
+    width: 20%;
+    border-right: 5px;
+}
+h3 {
+    width: 20%;
+    border-right: 5px;
+    padding: 80px;
 }
 
-section {
-    display: block;
+.mySection p {
+    width: 80%;
+    border: 2px;
+    flex-direction: space-between;
+}
+
+.mySection {
+    flex-direction: space-between;
+    display: flex;
+}
+
+.cards p {
+    width: 80%;
+    border: 5px;
+    flex-direction: space-between;
+}
+
+.cards {
+    flex-direction: space-between;
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.container ul {
+    overflow: hidden;
+    display: inline;
 }
