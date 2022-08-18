@@ -5,12 +5,15 @@
 }
 /* make the margin for the page and color background fun */
 body {
-    background-color: aliceblue;
+    background-image: url(/SBPortfolio/images/cool-background.png);
     font-family: Arial, Helvetica, sans-serif;
+    margin: 2rem;
+    color: white;
 }
 
 header {
-    background-color: rgba(17, 182, 233, 0.637);
+    background-image: url(/SBPortfolio/images/palmtrees.jpg);
+    background-attachment:fixed;
     padding: 20px;
     text-align: center; 
     display: flex;
@@ -35,6 +38,7 @@ nav a {
   
 nav a:hover {
     border-bottom: 3px solid black;
+    ;
   }
   
 nav a.active {
@@ -49,6 +53,12 @@ h3 {
     width: 20%;
     border-right: 5px;
     padding: 80px;
+}
+
+.me {
+    width: 80%;
+    display: flex;
+    border: solid white 5px;
 }
 
 .work {
@@ -79,6 +89,7 @@ h3 {
 .cards {
     flex-direction: space-between;
     display: flex;
+    border: 5px white solid;
 }
 
 .container {
@@ -90,25 +101,3 @@ h3 {
     overflow: hidden;
     display: inline;
 }
-
-.btn {
-        padding: 15px 25px;
-        font-size: 15px;
-        text-align: center;
-        cursor: pointer;
-        outline: none;
-        color: #fff;
-        background-color: #040faa;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-
-}
-      
-      .btn:hover {background-color: #040faa}
-      
-      .button:active {
-        background-color:  #040faa;
-        box-shadow: 0 5px rgb(118, 108, 204);
-        transform: translateY(4px);
-      }
