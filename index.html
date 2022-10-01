@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d9d7c163e6.js" crossorigin="anonymous"></script>
     <script src="/script.js"></script>
     <title>Steven's Portfolio</title>
 </head>
@@ -47,49 +48,67 @@
             </div>
         </div>
         <!-- change from section to article to be able to identify things more clearly in CSS-->
-        <div class="mx-auto" style="width: 200px" id="Projects">
+        <div class="work" id="Projects">
         <h2>Work</h2>
         <hr>
-        <article class="allCards">
-        <article class="cards">
+        <div class="cards">
+            <!-- include a future project that i can come back to and include the code and website once its done.-->
+            <h3>National Park Finder</h3>
+            <img src="/SBPortfolio/images/nationalPark.jpeg" height="260px" width="260px" alt="animated bank photo">
+            <p>This was the first project as a team that i've been part of. This was so great to get real world experience. <br>
+                Having multiple people work on things was great! This project is a National Park Finder. <br>
+                There is a search bar that you can enter a National Park and it will provide information using an API. <br>
+                The information provided is the operations hours, the current weather, and a brief paragraph of the park and a photo. 
+            </p>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://proper-stevo.github.io/ThePonderosaPines/">Website</a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Proper-Stevo/ThePonderosaPines">Code</a>
+            
+        </div>
+        <div class="allCards">
+        <div class="cards">
             <h3>Calculator</h3>
             <img src="/SBPortfolio/images/calculator.ico" alt="a simple calculator app for everyday use">
                <p>I was a few tutorials and reading I was able to create a calculator for anyone to use. One of the projects that made me interested <br>
-                In becoming a developer was this simple calculator. Understanding that you can create something from a few lines of code was great. 
-            <a href="https://proper-stevo.github.io/calculator/">Website</a>
-            <a href="https://github.com/Proper-Stevo/calculator">Code</a>
-                </p>
+                In becoming a developer was this simple calculator. Understanding that you can create something from a few lines of code was great. </p>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://proper-stevo.github.io/calculator/">Website</a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Proper-Stevo/calculator">Code</a>
+                
                 <!-- include a image on work that ive done before and a button that works -->
             
-        </article>
-        <article class="cards">
+               </div>
+        <div class="cards">
             <!-- include a memory game with the photo, the alt tag for impared people and liinks that work for display-->
             <h3>Memory Game</h3>
             <img src="/SBPortfolio/images/cards.webp" alt="animated bank photo">
             <p>This was a fun quick game that I was able to find when I was introduced into JavaScript. <br>
                 While this was a tutorial as well, it was something that I was able to understand and find as a stepping stone into the direction of my future career.
-            <a href="https://proper-stevo.github.io/Memory-Game-2.0/">Website</a>
-            <a href="https://github.com/Proper-Stevo/Memory-Game-2.0">Code</p></article>
             </p>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://proper-stevo.github.io/Memory-Game-2.0/">Website</a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Proper-Stevo/Memory-Game-2.0">Code</a>
+            </div>
             
-        </article>
-        <article class="cards">
+        </div>
+        <div class="cards">
             <!-- include a future project that i can come back to and include the code and website once its done.-->
-            <h3>Future Project</h3>
-            <img src="/SBPortfolio/images/future.webp" height="260px" width="260px" alt="animated bank photo">
-            <p>This is where I plan to come back and create a JavaScript project soon. <br>
-                Learning new things daily on how to create and use web development for my career is a great thing.
-            <a href="#">Website</a>
-            <a href="#">Code</a>
-            
+            <h3>Note Taker</h3>
+            <img src="/SBPortfolio/images/noteimage.png" height="260px" width="260px" alt="animated bank photo">
+            <p>This project was interesting because it used backend to enable the note taker to work. <br>
+                Understanding Routes has been a good way to see how backend works and its very interesting. 
             </p>
-        </article>
-        <article>
-            <li><a href="mailto:steven.barrios92@gmail.com" style="text-decoration: transparent">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/stevenb1992/" style="text-decoration: transparent">LinkedIn</a></li>
-            <li><a href="https://github.com/Proper-Stevo" style="text-decoration: transparent"> GitHub</a></li>
-            <li><a href="https://twitter.com" style="text-decoration: transparent">Twitter</a></li>
-        </article>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://nameless-sierra-87070.herokuapp.com/notes">Website</a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Proper-Stevo/NoteTaker">Code</a>
+            
+        </div>
+        <br>
+        <hr>
+        <footer>
+            <div>
+            <a class="btn btn-outline-light btn-floating m-1" href="mailto:steven.barrios92@gmail.com" role="button"><i class="fab fa-google"></i></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/stevenb1992/" role="button"><i class="fab fa-linkedin"></i></a>
+            <i class="btn btn-outline-light btn-floating m-1" href="https://github.com/Proper-Stevo" role="button"><i class="fab fa-github"></i></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" style="text-decoration: transparent" role="button"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
         </div>
     </div>
   </div>

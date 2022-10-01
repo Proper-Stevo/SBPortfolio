@@ -19,23 +19,6 @@ body {
         animation: gradient 15s ease infinite;
 }
 
-/* 
-h2 {
-    width: 20%;
-    border-right: 5px;
-}
-h3 {
-    width: 20%;
-    border-right: 5px;
-    padding: 80px;
-} */
-
-.cards {
-    /* flex-direction: space-between;
-    display: flex; */
-    /* border: 5px lightgrey solid; */
-    box-shadow: darkgrey solid;
-} 
 
 
 
@@ -46,13 +29,6 @@ h3 {
     }
   }
   
-  
-  @media screen and (max-width: 768px) {
-    nav {
-        width: auto;
-        height: auto;
-    }
-  }
   
   
   @media screen and (max-width: 576px) {
