@@ -5,48 +5,21 @@
 }
 /* make the margin for the page and color background fun */
 body {
-    background-color: lightblue; 
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     font-family: Arial, Helvetica, sans-serif;
     margin: 2rem;
     color: white;
 }
 
-/*make the header where my name is at on the page and move it to the left*/
-
-header {
-    background-position: unset;
-    padding: 20px;
-    text-align: center; 
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+#mainPage {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
 }
 
 /* 
-nav {
-    overflow: hidden;
-  } */
-/* make the links able to sit on the right side of the page
-nav a {
-    float: right;
-    display: flex;
-    color: blue;
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-bottom: 3px solid transparent;
-  } */
-  
-nav a:hover {
-    border-bottom: 3px solid black;
-    ;
-  }
-  
-nav a.active {
-    border-bottom: 3px solid black;
-  }
-
 h2 {
     width: 20%;
     border-right: 5px;
@@ -55,71 +28,17 @@ h3 {
     width: 20%;
     border-right: 5px;
     padding: 80px;
-}
-
-.me {
-    width: 80%;
-    display: flex;
-    border: solid white 5px;
-}
-
-.work {
-    display: flex;
-}
-
-.allCards {
-    width: 80%;
-}
-
-.mySection p {
-    width: 80%;
-    border: 2px;
-    flex-direction: space-between;
-}
-
-.mySection {
-    flex-direction: space-between;
-    display: flex;
-}
-
-.cards p {
-    width: 80%;
-    border: 5px;
-    flex-direction: space-between;
-}
+} */
 
 .cards {
-    flex-direction: space-between;
-    display: flex;
-    border: 5px lightgrey solid;
+    /* flex-direction: space-between;
+    display: flex; */
+    /* border: 5px lightgrey solid; */
     box-shadow: darkgrey solid;
-}
+} 
 
-.container {
-    display: flex;
-    padding: 5px;
-}
 
-.container ul {
-    overflow: hidden;
-    display: flex;
-    padding: 5rem;
-    width: 100%;
-    justify-content: space-between;
-    color: white;
-}
 
-mark {
-    background-color: white;
-}
-
-.container a {
-    color: white;
-}
-
-a {
-    color:red;
-}
 /*adjusting the screen sizes for multiple uses */
 @media screen and (max-width: 992px) {
     work {
@@ -142,3 +61,15 @@ a {
         height: auto;
     }
   }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
